@@ -1,0 +1,60 @@
+.bubbles img {
+    animation: bubble 15s linear infinite;
+}
+
+.bubbles img:nth-child(1) {
+    width: 20px;
+    animation-delay: 8s;
+}
+
+.bubbles img:nth-child(2) {
+    width: 50px;
+    animation-delay: 1.7s;
+}
+
+.bubbles img:nth-child(3) {
+    width: 15px;
+    animation-delay: 2s;
+}
+
+.bubbles img:nth-child(4) {
+    width: 35px;
+    animation-delay: 6s;
+}
+
+.bubbles img:nth-child(5) {
+    width: 10px;
+    animation-delay: 1.8s;
+}
+
+.bubbles img:nth-child(6) {
+    width: 24px;
+    animation-delay: 10s;
+}
+
+.bubbles img:nth-child(7) {
+    width: 35px;
+    animation-delay: 4s;
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    
+    30% {
+        opacity: 0.3;
+
+    }
+    
+    40% {
+        opacity: 0.3;
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80vh);
+    }
+}
