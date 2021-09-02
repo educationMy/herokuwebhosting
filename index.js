@@ -2,8 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const hostname = "localhost";
-const port = 3000;
+// const hostname = "localhost";
+const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
 
@@ -43,7 +43,7 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-type', 'text/html');
         res.end('<html> <body> <h1> error 404:'+ fileURL+ ' not supported </h1></body></html>');
     }
-    
+
 });
 
 server.listen(port, hostname, () => {
